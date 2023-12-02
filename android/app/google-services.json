@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952893296966",
+    "project_id": "fir-ecom-6fe01",
+    "storage_bucket": "fir-ecom-6fe01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952893296966:android:d16bd19d46051c61351547",
+        "android_client_info": {
+          "package_name": "com.example.practice_ecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmTS3p0AcYOQH9zmQCgI_RAhbVrnyXyUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
