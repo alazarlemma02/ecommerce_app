@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:practice_ecom/demo.dart';
+import 'package:practice_ecom/config/app_router.dart';
+import 'package:practice_ecom/config/theme_data.dart';
+import 'package:practice_ecom/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,19 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.blue,
-          backgroundColor: Colors.white,
-          accentColor: Colors.blue,
-          cardColor: Colors.white,
-          errorColor: Colors.red,
-          brightness: Brightness.light,
-        ),
-        useMaterial3: true,
-      ),
-      home: const DemoPage(),
+      theme: theme(context),
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
